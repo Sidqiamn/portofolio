@@ -5,7 +5,7 @@ import Projects from "./pages/Projects";
 import ProjectDetail from "./pages/ProjectDetail";
 import ProjectsistemML from "./pages/projectsistemML";
 import { Toaster } from "@/components/ui/toaster";
-import Hiteman from "./pages/hiteman";
+import Hiteman from "./pages/Hiteman";
 
 function App() {
   return (
