@@ -58,7 +58,7 @@ export const ContactSection = () => {
 
   return (
     <section
-      data-aos="flip-right"
+      data-aos="fade-down"
       id="contact"
       className="py-24 px-4 relative bg-secondary/30"
     >
