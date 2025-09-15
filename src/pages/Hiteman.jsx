@@ -40,63 +40,63 @@ const Hiteman = () => {
       <article className="prose mt-10">
         <section>
           <p>
-            HaiTeman adalah chatbot yang mendeteksi emosi (happy, sadness, fear,
-            stress) dari teks bahasa Indonesia, menghasilkan skrip terapi
-            berbasis Acceptance and Commitment Therapy (ACT), dan mengubahnya
-            menjadi audio. Solusi menggabungkan DistilBERT, TF-IDF + Logistic
-            Regression (hybrid), LLM untuk skrip, TTS untuk audio, dan FastAPI
-            untuk endpoint real-time. Fokus utama: akurasi tinggi, konteks
-            budaya lokal, efisiensi untuk mobile.
+            HaiTeman is a chatbot that detects emotions (happiness, sadness,
+            fear, stress) from Indonesian text, generates therapy scripts based
+            on Acceptance and Commitment Therapy (ACT), and converts them into
+            audio. The solution combines DistilBERT, TF-IDF + Logistic
+            Regression (hybrid), an LLM for script generation, TTS for audio,
+            and FastAPI for real-time endpoints. The main focus: high accuracy,
+            local cultural context, and mobile efficiency.
           </p>
         </section>
 
         <section>
-          <h2 className="font-bold">Tujuan (Goals)</h2>
+          <h2 className="font-bold">Goals</h2>
           <ul className="list-disc list-inside">
             <li>
-              Membangun chatbot ACT yang deteksi emosi & memberi respons terapi
-              audio.
+              Build an ACT-based chatbot that detects emotions and provides
+              therapeutic audio responses.
             </li>
             <li>
-              Mencapai akurasi klasifikasi &gt;95% (target tercapai: ~97%).
+              Achieve classification accuracy &gt;95% (target reached: ~97%).
             </li>
             <li>
-              Optimasi untuk deployment pada perangkat terbatas (TFLite,
+              Optimize deployment for resource-constrained devices (TFLite,
               Docker).
             </li>
-            <li>Antarmuka API dan UX yang ramah pengguna.</li>
+            <li>Provide user-friendly API and UX design.</li>
           </ul>
         </section>
 
         <section>
-          <h2 className="font-bold">Pendekatan Solusi</h2>
+          <h2 className="font-bold">Solution Approach</h2>
           <ol className="list-disc list-inside">
             <li>
-              <strong>Klasifikasi Emosi (Hybrid):</strong> fine-tuned DistilBERT
-              + TF-IDF features → Logistic Regression. Hasil: akurasi ~97%,
-              F1-score 0.97.
+              <strong>Emotion Classification (Hybrid):</strong> fine-tuned
+              DistilBERT + TF-IDF features → Logistic Regression. Results: ~97%
+              accuracy, F1-score 0.97.
             </li>
             <li>
-              <strong>LLM &amp; TTS:</strong> LLM menghasilkan skrip terapi
-              berbasis ACT; TTS menghasilkan .wav dengan intonasi menenangkan
-              (MOS 4.5/5).
+              <strong>LLM &amp; TTS:</strong> LLM generates ACT-based therapy
+              scripts; TTS produces .wav audio with a calming intonation (MOS
+              4.5/5).
             </li>
             <li>
-              <strong>API &amp; Deployment:</strong> FastAPI menyediakan
-              endpoint
-              <code> /generate_therapy_audio</code> semua komponen dikemas dalam
-              Docker dan model juga diekspor ke TFLite untuk mobile.
+              <strong>API &amp; Deployment:</strong> FastAPI provides the
+              <code>/generate_therapy_audio</code> endpoint. All components are
+              containerized with Docker, and models are exported to TFLite for
+              mobile.
             </li>
           </ol>
         </section>
 
         <section>
-          <h2 className="font-bold">Data &amp; Persiapan</h2>
+          <h2 className="font-bold">Data &amp; Preparation</h2>
           <p>
-            Dataset gabungan dari kaggle dan membuat sendiri . Langkah penting:
-            pembersihan, augmentasi untuk kelas minoritas, undersampling kelas
-            mayor, dan pembagian 80/10/10. Tokenisasi DistilBert dengan
-            max_length=128.
+            The dataset combines Kaggle sources and custom-built data. Key
+            steps: cleaning, augmentation for minority classes, undersampling of
+            majority classes, and 80/10/10 train-validation-test split.
+            DistilBERT tokenization with max_length=128.
           </p>
         </section>
       </article>

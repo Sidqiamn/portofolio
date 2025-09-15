@@ -3,13 +3,13 @@ export const projects = [
   {
     id: 1,
     title: "HiTeman",
-    description: "An application to eliminate negative emotions",
+    description: "An application to help reduce negative emotions",
     image: "/projects/project12.png",
-    tags: ["Hugging Face", "Distilbert", "NLP"],
+    tags: ["Hugging Face", "DistilBERT", "NLP"],
     longDescription: `
       HiTeman is an AI-based app designed to detect and reduce negative emotions
-      using NLP models from Hugging Face. It helps users by analyzing their
-      emotional text input and providing feedback or support.
+      using NLP models from Hugging Face. It analyzes users’ emotional text input
+      and provides supportive feedback or therapy scripts.
     `,
     gallery: [
       "/projects/hiteman1.png",
@@ -21,19 +21,47 @@ export const projects = [
     id: 2,
     title: "Resolving Issues in Educational Institutions",
     description:
-      "Interactive analytics dashboard with data visualization and filtering capabilities.",
+      "Interactive analytics dashboard with predictive modeling and data visualization.",
     image: "/projects/project2.png",
     image2: "/projects/dashboard.png",
     tags: ["TypeScript", "D3.js", "Next.js"],
     longDescription: `
-      Jaya Jaya Institut adalah institusi pendidikan tinggi yang berdiri sejak tahun 2000 dan telah mencetak banyak lulusan berkualitas. Namun, tingginya jumlah mahasiswa yang tidak menyelesaikan studinya (dropout) menjadi tantangan besar bagi institusi.
+      Jaya Jaya Institute is a higher education institution established in 2000
+      that has produced many quality graduates. However, the high dropout rate
+      has become a major challenge for the institution.
 
-Untuk mengatasi hal ini, proyek ini bertujuan membangun sistem prediksi dropout berbasis machine learning dengan menggunakan dataset performa mahasiswa. Sistem ini akan membantu mendeteksi lebih awal mahasiswa yang berisiko dropout sehingga dapat diberikan bimbingan khusus. Selain itu, dashboard interaktif juga dibuat untuk memudahkan pihak institusi dalam memahami data serta memonitor performa mahasiswa secara menyeluruh.
+      To address this, the project aims to build a machine learning-based dropout
+      prediction system using student performance datasets. The system helps
+      detect students at risk of dropping out early, enabling tailored guidance.
+      In addition, an interactive dashboard was developed to help the institution
+      understand the data and monitor overall student performance.
     `,
     gallery: ["/projects/streamlit1.png", "/projects/streamlit2.png"],
-    longDescription2: `Gambar tersebut memperlihatkan sebuah aplikasi berbasis web yang dikembangkan menggunakan Streamlit dengan tujuan untuk memprediksi kemungkinan seorang mahasiswa mengalami dropout atau putus studi. Aplikasi ini diberi nama Dropout Prediction App – Jaya Jaya Institut dan menampilkan antarmuka berupa formulir input yang berisi berbagai variabel penting yang berkaitan dengan data akademik, demografi, serta kondisi ekonomi mahasiswa, seperti status perkawinan, usia saat mendaftar, nilai kualifikasi sebelumnya, biaya kuliah yang sudah dibayar, hingga jumlah mata kuliah yang diambil dan lulus pada semester tertentu. Setelah pengguna memasukkan data lengkap seorang mahasiswa dan menekan tombol prediksi, aplikasi akan memproses informasi tersebut dengan model machine learning yang telah dilatih sebelumnya. Hasil prediksi kemudian ditampilkan secara langsung pada halaman yang sama, seperti pada contoh dalam gambar yang menunjukkan bahwa mahasiswa dengan profil data yang dimasukkan berisiko tinggi untuk dropout. Dengan cara ini, aplikasi dapat menjadi alat bantu bagi institusi pendidikan dalam mengidentifikasi mahasiswa yang rentan putus studi sehingga dapat dilakukan intervensi lebih awal.`,
-    longDescription3: `Saya telah membuat sebuah dashboard menggunakan Metabase untuk membantu Institut Jaya Jaya dalam memahami permasalahan tingginya angka mahasiswa dropout. Dashboard ini menampilkan berbagai visualisasi data seperti jumlah total dropout, performa akademik berdasarkan gender, distribusi status per program studi, ketepatan pembayaran biaya kuliah, pengaruh kepemilikan beasiswa, tingkat pengangguran, serta distribusi usia mahasiswa. Dengan adanya dashboard ini, pihak institusi dapat dengan mudah melihat pola-pola yang berhubungan dengan mahasiswa yang berisiko dropout. Misalnya, terlihat hubungan antara keterlambatan pembayaran biaya kuliah dan status dropout, perbedaan performa akademik mahasiswa dengan dan tanpa beasiswa, hingga pengaruh faktor usia serta kondisi sosial-ekonomi terhadap kelulusan mahasiswa. Tujuan utama dashboard ini adalah sebagai alat deteksi dini untuk mengidentifikasi mahasiswa yang berpotensi dropout sehingga pihak kampus dapat memberikan intervensi tepat sasaran, baik berupa bimbingan akademik, dukungan finansial, maupun pendampingan khusus, demi menekan angka dropout dan meningkatkan jumlah mahasiswa yang berhasil menyelesaikan studinya.
-`,
+    longDescription2: `
+      The image shows a web-based application developed with Streamlit to predict
+      the likelihood of student dropout. The application, named Dropout Prediction
+      App – Jaya Jaya Institute, provides a form-based interface containing key
+      academic, demographic, and financial variables such as marital status, age
+      at enrollment, prior qualification scores, tuition fees paid, and courses
+      taken and passed in a given semester. Once the data is submitted, the
+      application processes it using a pre-trained machine learning model. The
+      prediction results are displayed directly, showing whether the student is
+      at high risk of dropping out. This tool helps the institution intervene
+      early for at-risk students.
+    `,
+    longDescription3: `
+      I also developed a dashboard using Metabase to support Jaya Jaya Institute
+      in analyzing dropout issues. The dashboard provides visualizations such as
+      total dropouts, academic performance by gender, dropout status per program,
+      tuition payment punctuality, scholarship effects, unemployment levels, and
+      age distribution. These insights allow the institution to identify patterns
+      linked to dropout risks, for example, correlations between late payments
+      and dropout status, differences between scholarship and non-scholarship
+      students, and socio-economic influences. The main purpose is to serve as an
+      early detection tool to support targeted interventions, whether academic
+      mentoring, financial aid, or special counseling, to reduce dropout rates
+      and improve graduation outcomes.
+    `,
     subjudul: `Streamlit`,
     subjudul2: `Metabase`,
   },
@@ -41,15 +69,34 @@ Untuk mengatasi hal ini, proyek ini bertujuan membangun sistem prediksi dropout 
     id: 3,
     title: "Helmet Detection",
     description:
-      "Interactive analytics dashboard with data visualization and filtering capabilities.",
+      "Computer vision system to detect whether a person is wearing a helmet.",
     image: "/projects/val_batch2_pred.jpg",
-
-    tags: ["TypeScript", "D3.js", "Next.js"],
-    longDescription: ` Proyek ini merupakan implementasi sistem deteksi helm menggunakan YOLO11 yang ditujukan untuk mengidentifikasi apakah seseorang mengenakan helm atau tidak. Dataset diambil dari kaggel lalu dimasukkan ke Roboflow dengan dua kelas utama, yaitu helmet dan no_helmet, kemudian dilakukan preprocessing berupa pemeriksaan kualitas gambar untuk memisahkan citra buram dan citra bersih agar model tidak belajar dari data yang kurang informatif. Selanjutnya, distribusi kelas divisualisasikan untuk memastikan keseimbangan data, dan beberapa contoh gambar ditampilkan beserta labelnya. Model YOLO11 yang telah dipra-latih diunduh dan digunakan sebagai checkpoint, lalu dilakukan proses pelatihan dengan parameter tertentu seperti 70 epoch, ukuran gambar 640 piksel, batch size 16, serta mekanisme early stopping untuk mencegah overfitting. Setelah pelatihan, model dievaluasi menggunakan metrik mAP@50 dan mAP@50:95 untuk mengukur performa deteksi. Hasil akhir berupa model terlatih kemudian disimpan di Google Drive agar dapat digunakan kembali dalam tahap implementasi atau deployment, misalnya pada sistem pemantauan lalu lintas atau aplikasi keselamatan kerja berbasis CCTV.`,
+    tags: ["YOLOv11", "Roboflow", "Computer Vision"],
+    longDescription: `
+      This project implements a helmet detection system using YOLOv11 to identify
+      whether a person is wearing a helmet or not. The dataset was taken from
+      Kaggle and processed with Roboflow into two main classes: helmet and
+      no_helmet. Preprocessing included image quality checks to separate blurred
+      from clear images, ensuring the model learned from informative data. Class
+      distribution was visualized for balance, and labeled samples were
+      inspected. The pre-trained YOLOv11 model was used as a checkpoint and
+      fine-tuned with parameters such as 70 epochs, 640-pixel image size, batch
+      size 16, and early stopping to prevent overfitting. Evaluation was
+      conducted with mAP@50 and mAP@50:95 metrics. The trained model was stored
+      in Google Drive for reuse in deployment, such as traffic monitoring or
+      workplace safety applications.
+    `,
     gallery: ["/projects/val_batch2_pred.jpg", "/projects/val_batch1_pred.jpg"],
-    longDescription2: `Hasil training menunjukkan proses pelatihan model YOLO selama 70 epoch, di mana pada setiap epoch ditampilkan penggunaan memori GPU, nilai kerugian (loss) untuk bounding box (box_loss), klasifikasi (cls_loss), dan distribusi jarak (dfl_loss), serta hasil evaluasi pada dataset validasi berupa metrik presisi (P), recall (R), mAP@50, dan mAP@50-95. Dari epoch 1 ke 10 terlihat penurunan signifikan pada nilai loss dan peningkatan tajam pada mAP, misalnya mAP@50 naik dari 0.295 di epoch 1 menjadi 0.954 di epoch 10, yang menunjukkan model belajar dengan cepat. Setelah itu, nilai loss terus menurun secara bertahap, sementara metrik evaluasi semakin stabil dengan mAP@50 berada di atas 0.94 mulai epoch 12 hingga 46, bahkan mencapai akurasi 0.987 pada epoch 44. Hal ini menandakan model sudah cukup matang belajar pola dari data, dan performanya semakin konsisten meskipun peningkatan tidak lagi sebesar di awal.
-`,
-    subjudul: `Hasil deteksi`,
+    longDescription2: `
+      Training results showed YOLO learning curves across 70 epochs. Each epoch
+      reported GPU memory usage, losses (box_loss, cls_loss, dfl_loss), and
+      validation metrics (precision, recall, mAP@50, mAP@50-95). Between epochs
+      1–10, loss dropped significantly and mAP improved quickly, e.g., mAP@50
+      rose from 0.295 to 0.954. After epoch 12, metrics stabilized with mAP@50
+      above 0.94 up to epoch 46, reaching 0.987 accuracy at epoch 44. This shows
+      the model achieved strong and consistent performance.
+    `,
+    subjudul: `Detection Results`,
     video: "/projects/inferenceHelmet.mp4",
     subjudul2: `Inference`,
   },
@@ -57,17 +104,50 @@ Untuk mengatasi hal ini, proyek ini bertujuan membangun sistem prediksi dropout 
     id: 4,
     title: "Sentiment Analysis of Mobile Legends App",
     description:
-      "Interactive analytics dashboard with data visualization and filtering capabilities.",
+      "Sentiment classification system for user reviews from Google Play Store.",
     image: "/projects/val_batch2_pred.jpg",
-    longDescriptionparagraf2: `Setelah teks diproses, dilakukan pelabelan sentimen menggunakan pendekatan lexicon, di mana setiap kata diberi skor berdasarkan kamus kata positif dan negatif. Dari hasilnya, ulasan terbagi ke dalam tiga kelas, yaitu negatif sebanyak 5483 data, positif 3742 data, dan netral 1671 data. Untuk membangun fitur, digunakan representasi TF-IDF dengan n-gram hingga 3, yang kemudian dipilih 5000 fitur terbaik dengan chi-square. Agar data tidak timpang, dilakukan oversampling dengan SMOTE, sehingga setiap kelas memiliki jumlah data yang seimbang.`,
-    tags: ["TypeScript", "D3.js", "Next.js"],
-    longDescription: `Proyek yang dikerjakan adalah analisis sentimen terhadap ulasan pengguna aplikasi Mobile Legends di Google Play Store dengan menggunakan pendekatan machine learning dan deep learning. Proses dimulai dari pengambilan data sebanyak 11.000 ulasan melalui scraping, yang berisi informasi berupa teks ulasan, tanggal, rating bintang, dan nama pengguna. Data tersebut kemudian melalui tahap preprocessing, yaitu pembersihan teks dari duplikasi, angka, simbol, tanda baca, URL, dan karakter khusus, disertai dengan penghapusan stopwords dalam bahasa Indonesia maupun Inggris. Selain itu, dilakukan stemming menggunakan Sastrawi, normalisasi kata slang menjadi kata baku, serta penerjemahan emotikon ke dalam kata bermakna agar sentimen lebih mudah dikenali oleh model.`,
+    tags: ["TF-IDF", "GRU", "Machine Learning"],
+    longDescription: `
+      This project focuses on sentiment analysis of Mobile Legends user reviews
+      from Google Play Store using both machine learning and deep learning
+      approaches. A total of 11,000 reviews were scraped, containing review text,
+      dates, star ratings, and usernames. Preprocessing steps included removing
+      duplicates, numbers, symbols, punctuation, URLs, and special characters;
+      eliminating stopwords in Indonesian and English; stemming with Sastrawi;
+      normalizing slang into standard words; and converting emoticons into
+      meaningful text to improve sentiment recognition.
+    `,
     gallery: [
       "/projects/output-gru.png",
       "/projects/output-RF.png",
       "/projects/distribusimobile legends.png",
     ],
-    longDescription2: `Pada tahap pemodelan, kamu melatih tiga model berbeda. Pertama, MLP (Multi-Layer Perceptron) berbasis TF-IDF dengan arsitektur dense layer bertingkat, yang menghasilkan akurasi 92,42%. Kedua, Random Forest dengan 1500 pohon keputusan yang memberikan akurasi 91,31%. Ketiga, model terbaik yaitu hybrid GRU + TF-IDF, yang menggabungkan input embedding sequence dengan representasi TF-IDF, lalu diproses oleh layer GRU dan dense. Model ini mencapai akurasi tertinggi yaitu 93,44% dan lebih stabil dalam membedakan ulasan positif, negatif, maupun netral.`,
-    longDescription2paragraf2: `Hasil evaluasi menggunakan accuracy, F1-score, precision, recall, dan confusion matrix menunjukkan bahwa model GRU hybrid mampu memahami konteks kalimat lebih baik dibandingkan metode klasik. Sebagai penerapan, dibuat fungsi inference untuk memprediksi sentimen dari teks baru, misalnya kalimat “good” diprediksi sebagai positif, “sedang, biasa saja” sebagai netral, dan “sangat buruk, jangan main!” sebagai negatif. Dengan demikian, proyek ini berhasil menghasilkan sistem analisis sentimen otomatis yang efektif untuk memetakan opini pengguna terhadap Mobile Legends, dengan performa terbaik ditunjukkan oleh model deep learning GRU hybrid.`,
+    longDescriptionparagraf2: `
+      After text processing, sentiment labels were assigned using a lexicon-based
+      approach. Reviews were categorized into three classes: negative (5,483),
+      positive (3,742), and neutral (1,671). Features were built using TF-IDF
+      with up to 3-grams, and the top 5,000 features were selected via
+      chi-square. To handle imbalance, oversampling with SMOTE was applied,
+      resulting in balanced class distributions.
+    `,
+    longDescription2: `
+      Three models were trained. First, a TF-IDF-based MLP (Multi-Layer
+      Perceptron) with stacked dense layers achieved 92.42% accuracy. Second, a
+      Random Forest with 1,500 decision trees achieved 91.31%. The best model
+      was a hybrid GRU + TF-IDF, combining embedding sequences with TF-IDF
+      features, processed through GRU and dense layers. It achieved the highest
+      accuracy at 93.44% and was more stable in classifying positive, negative,
+      and neutral reviews.
+    `,
+    longDescription2paragraf2: `
+      Evaluation with accuracy, F1-score, precision, recall, and confusion
+      matrix showed the GRU hybrid model could better capture context compared
+      to traditional methods. As a practical use case, an inference function was
+      built to predict sentiment from new text. For example, “good” is predicted
+      as positive, “sedang, biasa saja” as neutral, and “sangat buruk, jangan
+      main!” as negative. This system demonstrates an effective automatic
+      sentiment analysis solution, with the GRU hybrid deep learning model
+      delivering the best performance.
+    `,
   },
 ];
