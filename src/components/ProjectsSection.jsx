@@ -8,7 +8,7 @@ const projects = [
     description: "An application to eliminate negative emotions",
     image: "/projects/project12.png",
     tags: ["Hugging Face", "Distilbert", "NLP"],
-    githubUrl: "#",
+    githubUrl: "https://github.com/Sidqiamn",
   },
   {
     id: 2,
@@ -16,7 +16,7 @@ const projects = [
     description: "identifying students at risk of dropping out ",
     image: "/projects/streamlit1.png",
     tags: ["Metabase", "Streamlit", "RF"],
-    githubUrl: "#",
+    githubUrl: "https://github.com/Sidqiamn",
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ const projects = [
     description: "Detecting whether a person is wearing a helmet or not",
     image: "/projects/val_batch1_pred.jpg",
     tags: ["Computer Vision", "Yolov11"],
-    githubUrl: "#",
+    githubUrl: "https://github.com/Sidqiamn",
   },
   {
     id: 4,
@@ -33,7 +33,7 @@ const projects = [
       "Sentiment analysis of positive, negative, and neutral categories, along with building Machine Learning and Deep Learning models.",
     image: "/projects/mobile legends.jpg",
     tags: ["GRU", "Keras", "Tensor Flow"],
-    githubUrl: "#",
+    githubUrl: "https://github.com/Sidqiamn",
   },
   {
     id: 5,
@@ -42,7 +42,7 @@ const projects = [
       "Building a reliable, production-ready machine learning system involves the complete pipeline—from data collection and model training to metadata tracking, deployment, and active monitoring.",
     image: "/projects/iris.jpg",
     tags: ["Grafana", "Docker", "ML Flow"],
-    githubUrl: "#",
+    githubUrl: "https://github.com/Sidqiamn",
   },
 ];
 
