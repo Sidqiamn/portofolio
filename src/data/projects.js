@@ -62,8 +62,11 @@ export const projects = [
       mentoring, financial aid, or special counseling, to reduce dropout rates
       and improve graduation outcomes.
     `,
+    longDescription4:
+      "I also implemented a Machine Learning Prototype System using Cloud Run. The steps I took began with building a Docker container from the machine learning application I had developed, then uploading the Docker image to Google Container Registry (GCR) so it could be managed in the cloud environment. After that, I proceeded to run the container using Cloud Run, complete with configuration settings such as region, autoscaling, and adjusting the container port to 8501. As a result, my machine learning application could be accessed via the URL provided by Cloud Run, proving that I had successfully implemented the full workflow from container creation, uploading to the registry, and deployment with Cloud Run.",
     subjudul: `Streamlit`,
     subjudul2: `Metabase`,
+    subjudul3: `Google Cloud`,
   },
   {
     id: 3,

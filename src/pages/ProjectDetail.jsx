@@ -47,6 +47,10 @@ export default function ProjectDetail() {
         )}
       </div>
 
+      <div>
+        <p>{project.longDescription3}</p>
+      </div>
+
       <p>{project.longDescription3}</p>
     </div>
   );
