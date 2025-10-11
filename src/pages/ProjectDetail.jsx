@@ -47,11 +47,11 @@ export default function ProjectDetail() {
         )}
       </div>
 
-      <div>
-        <p>{project.longDescription3}</p>
-      </div>
-
       <p>{project.longDescription3}</p>
+      <div>
+        <h1 className="text-2xl font-semibold mt-10">{project.subjudul3}</h1>
+        <p>{project.longDescription4}</p>
+      </div>
     </div>
   );
 }
