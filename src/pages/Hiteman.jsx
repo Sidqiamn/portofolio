@@ -8,24 +8,26 @@ import mobile5 from "../../public/projects/mobile5.png";
 const Hiteman = () => {
   return (
     <div className="p-10 lg:mx-20 text-justify">
-      <h1 className="text-3xl font-bold mb-4">Hiteman</h1>
+      <h1 className="text-3xl font-bold mb-4">HaiTeman</h1>
       <p>
-        HaiTeman is an audio-based chatbot and data visualization tool developed
-        to help individuals manage their emotions in a healthier and more
-        independent way through the Acceptance and Commitment Therapy (ACT)
-        approach. This project was born out of concern for the high rates of
-        mental health disorders and limited access to professional services,
-        especially among young people and busy urban communities. We believe
-        that smart and accessible solutions can be the first step towards
-        greater awareness and self-care. This project utilizes AI technology,
-        particularly in the form of Large Language Models (LLM) to understand
-        and respond to users confessions empathetically, as well as
-        Text-to-Speech (TTS) to deliver therapeutic messages in a humanistic and
-        soothing manner. The execution plan includes the development of an
-        emotion classification model, LLM and TTS integration, and chatbot
-        interaction flow design. Up to this checkpoint, the team has completed
-        the literature study phase, emotion classification model development,
-        and chatbot interface creation.
+        HaiTeman adalah chatbot berbasis audio dan alat visualisasi data yang
+        dikembangkan untuk membantu individu mengelola emosinya dengan cara yang
+        lebih sehat dan mandiri melalui pendekatan{" "}
+        <strong>Acceptance and Commitment Therapy (ACT)</strong>. Proyek ini
+        lahir dari kepedulian terhadap tingginya angka gangguan kesehatan mental
+        dan terbatasnya akses ke layanan profesional, terutama di kalangan anak
+        muda dan masyarakat perkotaan yang sibuk. Kami percaya bahwa solusi yang
+        cerdas dan mudah diakses dapat menjadi langkah awal menuju kesadaran dan
+        perawatan diri yang lebih baik. Proyek ini memanfaatkan teknologi AI,
+        khususnya dalam bentuk
+        <strong>Large Language Models (LLM)</strong> untuk memahami dan
+        merespons curahan hati pengguna secara empatik, serta{" "}
+        <strong>Text-to-Speech (TTS)</strong> untuk menyampaikan pesan terapi
+        dengan cara yang humanis dan menenangkan. Rencana pelaksanaannya
+        mencakup pengembangan model klasifikasi emosi, integrasi LLM dan TTS,
+        serta perancangan alur interaksi chatbot. Hingga titik ini, tim telah
+        menyelesaikan tahap studi literatur, pengembangan model klasifikasi
+        emosi, dan pembuatan antarmuka chatbot.
       </p>
 
       <div className="grid grid-cols-1 mt-5 md:grid-cols-6 gap-1">
@@ -40,63 +42,70 @@ const Hiteman = () => {
       <article className="prose mt-10">
         <section>
           <p>
-            HaiTeman is a chatbot that detects emotions (happiness, sadness,
-            fear, stress) from Indonesian text, generates therapy scripts based
-            on Acceptance and Commitment Therapy (ACT), and converts them into
-            audio. The solution combines DistilBERT, TF-IDF + Logistic
-            Regression (hybrid), an LLM for script generation, TTS for audio,
-            and FastAPI for real-time endpoints. The main focus: high accuracy,
-            local cultural context, and mobile efficiency.
+            HaiTeman adalah chatbot yang mendeteksi emosi (senang, sedih, takut,
+            stres) dari teks berbahasa Indonesia, menghasilkan skrip terapi
+            berdasarkan
+            <strong> Acceptance and Commitment Therapy (ACT) </strong>, dan
+            mengubahnya menjadi audio. Solusi ini menggabungkan{" "}
+            <strong>DistilBERT</strong>,{" "}
+            <strong>TF-IDF + Logistic Regression (hybrid)</strong>,
+            <strong> LLM </strong> untuk pembuatan skrip, <strong>TTS</strong>{" "}
+            untuk audio, dan
+            <strong> FastAPI </strong> untuk endpoint real-time. Fokus utama
+            proyek ini adalah akurasi tinggi, konteks budaya lokal, dan
+            efisiensi pada perangkat mobile.
           </p>
         </section>
 
         <section>
-          <h2 className="font-bold">Goals</h2>
+          <h2 className="font-bold">Tujuan</h2>
           <ul className="list-disc list-inside">
             <li>
-              Build an ACT-based chatbot that detects emotions and provides
-              therapeutic audio responses.
+              Membangun chatbot berbasis ACT yang dapat mendeteksi emosi dan
+              memberikan respons audio terapeutik.
             </li>
             <li>
-              Achieve classification accuracy &gt;95% (target reached: ~97%).
+              Mencapai akurasi klasifikasi &gt;95% (target tercapai: ~97%).
             </li>
             <li>
-              Optimize deployment for resource-constrained devices (TFLite,
-              Docker).
+              Mengoptimalkan deployment untuk perangkat dengan sumber daya
+              terbatas (TFLite, Docker).
             </li>
-            <li>Provide user-friendly API and UX design.</li>
+            <li>Menyediakan API dan desain UX yang ramah pengguna.</li>
           </ul>
         </section>
 
         <section>
-          <h2 className="font-bold">Solution Approach</h2>
+          <h2 className="font-bold">Pendekatan Solusi</h2>
           <ol className="list-disc list-inside">
             <li>
-              <strong>Emotion Classification (Hybrid):</strong> fine-tuned
-              DistilBERT + TF-IDF features → Logistic Regression. Results: ~97%
-              accuracy, F1-score 0.97.
+              <strong>Klasifikasi Emosi (Hybrid):</strong> Fine-tuned DistilBERT
+              + fitur TF-IDF → Logistic Regression. Hasil: akurasi ~97%,
+              F1-score 0.97.
             </li>
             <li>
-              <strong>LLM &amp; TTS:</strong> LLM generates ACT-based therapy
-              scripts; TTS produces .wav audio with a calming intonation (MOS
-              4.5/5).
+              <strong>LLM &amp; TTS:</strong> LLM menghasilkan skrip terapi
+              berbasis ACT; TTS menghasilkan audio (.wav) dengan intonasi yang
+              menenangkan (MOS 4.5/5).
             </li>
             <li>
-              <strong>API &amp; Deployment:</strong> FastAPI provides the
-              <code>/generate_therapy_audio</code> endpoint. All components are
-              containerized with Docker, and models are exported to TFLite for
-              mobile.
+              <strong>API &amp; Deployment:</strong> FastAPI menyediakan
+              endpoint
+              <code>/generate_therapy_audio</code>. Semua komponen
+              dikontainerisasi dengan Docker, dan model diekspor ke TFLite untuk
+              versi mobile.
             </li>
           </ol>
         </section>
 
         <section>
-          <h2 className="font-bold">Data &amp; Preparation</h2>
+          <h2 className="font-bold">Data &amp; Persiapan</h2>
           <p>
-            The dataset combines Kaggle sources and custom-built data. Key
-            steps: cleaning, augmentation for minority classes, undersampling of
-            majority classes, and 80/10/10 train-validation-test split.
-            DistilBERT tokenization with max_length=128.
+            Dataset menggabungkan sumber dari Kaggle dan data yang dibangun
+            secara mandiri. Langkah-langkah utama meliputi pembersihan data,
+            augmentasi untuk kelas minoritas, undersampling untuk kelas
+            mayoritas, serta pembagian 80/10/10 untuk train-validation-test.
+            Tokenisasi DistilBERT menggunakan <code>max_length=128</code>.
           </p>
         </section>
       </article>

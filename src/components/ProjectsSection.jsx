@@ -5,32 +5,32 @@ const projects = [
   {
     id: 1,
     title: "HiTeman",
-    description: "An application to eliminate negative emotions",
+    description: "Aplikasi untuk menghilangkan emosi negatif",
     image: "/projects/project12.png",
     tags: ["Hugging Face", "Distilbert", "NLP"],
     githubUrl: "https://github.com/Sidqiamn",
   },
   {
     id: 2,
-    title: "Resolving Issues in Educational Institutions",
-    description: "identifying students at risk of dropping out ",
+    title: "Penyelesaian Masalah di Institusi Pendidikan",
+    description: "Mengidentifikasi siswa yang berisiko untuk putus sekolah",
     image: "/projects/streamlit1.png",
     tags: ["Metabase", "Streamlit", "RF"],
     githubUrl: "https://github.com/Sidqiamn",
   },
   {
     id: 3,
-    title: "Helmet Detection",
-    description: "Detecting whether a person is wearing a helmet or not",
+    title: "Deteksi Helm",
+    description: "Mendeteksi apakah seseorang menggunakan helm atau tidak",
     image: "/projects/val_batch1_pred.jpg",
     tags: ["Computer Vision", "Yolov11"],
     githubUrl: "https://github.com/Sidqiamn",
   },
   {
     id: 4,
-    title: "Sentiment Analysis of Mobile Legends App",
+    title: "Analisis Sentimen Aplikasi Mobile Legends",
     description:
-      "Sentiment analysis of positive, negative, and neutral categories, along with building Machine Learning and Deep Learning models.",
+      "Analisis sentimen untuk kategori positif, negatif, dan netral, serta membangun model Machine Learning dan Deep Learning.",
     image: "/projects/mobile legends.jpg",
     tags: ["GRU", "Keras", "Tensor Flow"],
     githubUrl: "https://github.com/Sidqiamn",
@@ -39,7 +39,7 @@ const projects = [
     id: 5,
     title: "Sistem Monitoring",
     description:
-      "Building a reliable, production-ready machine learning system involves the complete pipeline—from data collection and model training to metadata tracking, deployment, and active monitoring.",
+      "Membangun sistem machine learning yang andal dan siap produksi mencakup seluruh pipeline — mulai dari pengumpulan data, pelatihan model, pelacakan metadata, hingga deployment dan monitoring aktif.",
     image: "/projects/iris.jpg",
     tags: ["Grafana", "Docker", "ML Flow"],
     githubUrl: "https://github.com/Sidqiamn",
@@ -55,8 +55,8 @@ export const ProjectsSection = () => {
         </h2>
 
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          Here are some of my recent projects. Each project was carefully
-          crafted with attention to detail, performance, and user experience.
+          Berikut adalah beberapa proyek terbaru saya. Dibuat Dengan akurasi
+          tinggi dan detail yang baik.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

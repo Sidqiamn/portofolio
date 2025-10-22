@@ -11,7 +11,7 @@ export const HeroSection = () => {
       <div className="container max-w-4xl mx-auto text-center z-10">
         <div className="space-y-6">
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
-            <span className="opacity-0 animate-fade-in"> Hi, Im</span>
+            <span className="opacity-0 animate-fade-in"> Hi, Saya</span>
             <span className="text-primary opacity-0 animate-fade-in-delay-1">
               {" "}
               Sidqi
@@ -23,10 +23,10 @@ export const HeroSection = () => {
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-            I build intelligent solutions based on artificial intelligence that
-            can transform data into real innovation. As an AI Engineer, I focus
-            on developing effective, measurable AI models and systems that have
-            a direct impact on user needs.
+            Saya membangun solusi cerdas berbasis kecerdasan buatan yang dapat
+            mengubah data menjadi inovasi nyata. Sebagai seorang AI Engineer,
+            saya berfokus pada pengembangan model dan sistem AI yang efektif,
+            terukur, dan memiliki dampak langsung terhadap kebutuhan pengguna.
           </p>
 
           <div className="pt-4 opacity-0 animate-fade-in-delay-4">

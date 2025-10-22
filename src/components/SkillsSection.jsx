@@ -18,15 +18,9 @@ const skills = [
   { name: "Tableau", category: "Data Scientist" },
   { name: "Seaborn", category: "Data Scientist" },
   { name: "GraphQL", category: "Data Scientist" },
-
-  // Tools
-  { name: "PostgresSQL", category: "Data Engineer" },
-  { name: "RBDMS", category: "Data Engineer" },
-  { name: "BeautifulSoup", category: "Data Engineer" },
-  { name: "VS Code", category: "Data Engineer" },
 ];
 
-const categories = ["all", "AI Engineer", "Data Scientist", "Data Engineer"];
+const categories = ["all", "AI Engineer", "Data Scientist"];
 
 export const SkillsSection = () => {
   const [activeCategory, setActiveCategory] = useState("all");
