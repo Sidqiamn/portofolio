@@ -28,11 +28,11 @@ const projects = [
   },
   {
     id: 4,
-    title: "Analisis Sentimen Aplikasi Mobile Legends",
+    title: "Analisis Sentimen Aplikasi Roblox",
     description:
       "Analisis sentimen untuk kategori positif, negatif, dan netral, serta membangun model Machine Learning dan Deep Learning.",
     image: "/projects/mobile legends.jpg",
-    tags: ["GRU", "Keras", "Tensor Flow"],
+    tags: ["Transformer", "streamlit"],
     githubUrl: "https://github.com/Sidqiamn",
   },
   {

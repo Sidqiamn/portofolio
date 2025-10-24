@@ -103,49 +103,35 @@ export const projects = [
   },
   {
     id: 4,
-    title: "Analisis Sentimen Aplikasi Mobile Legends",
+    title: "Analisis Sentimen Aplikasi Roblox",
     description:
       "Sistem klasifikasi sentimen untuk ulasan pengguna dari Google Play Store.",
     image: "/projects/val_batch2_pred.jpg",
-    tags: ["TF-IDF", "GRU", "Machine Learning"],
+    tags: ["Transformer", "streamlit"],
     longDescription: `
-      Proyek ini berfokus pada analisis sentimen ulasan pengguna Mobile Legends
-      dari Google Play Store dengan pendekatan machine learning dan deep learning.
+      Proyek ini berfokus pada analisis sentimen ulasan pengguna Roblox
+      dari Google Play Store dengan menggunakan model transformer.
       Sebanyak 11.000 ulasan dikumpulkan, berisi teks ulasan, tanggal, rating bintang,
-      dan nama pengguna. Tahapan pra-pemrosesan meliputi penghapusan duplikat, angka,
-      simbol, tanda baca, URL, dan karakter khusus; penghapusan stopword bahasa Indonesia
-      dan Inggris; stemming dengan Sastrawi; normalisasi kata gaul menjadi kata baku;
-      serta konversi emotikon menjadi teks bermakna untuk meningkatkan deteksi sentimen.
+      dan nama pengguna. Kode tersebut membentuk sebuah pipeline analisis sentimen berbasis Natural Language Processing (NLP) yang menggunakan model Transformer berbahasa Indonesia untuk memproses ulasan pengguna aplikasi Roblox dari Google Play Store. Proses dimulai dengan tahap pengumpulan data menggunakan library google-play-scraper, yang mengambil ribuan ulasan terbaru berbahasa Indonesia agar data yang diperoleh relevan dengan konteks pengguna lokal. Data yang terkumpul kemudian melalui tahap preprocessing untuk membersihkan dan menyiapkan teks agar siap dianalisis oleh model. Tahapan pembersihan ini meliputi penghapusan emoji, tag HTML, URL, angka, serta tanda baca, diikuti dengan konversi seluruh teks menjadi huruf kecil untuk menjaga konsistensi. Setelah itu, dilakukan normalisasi terhadap kata tidak baku atau slang words agar diubah ke bentuk standar, tokenisasi untuk memecah kalimat menjadi kata-kata, penghapusan stopwords seperti “dan” atau “yang” yang tidak berpengaruh terhadap makna sentimen, serta stemming menggunakan library Sastrawi untuk mengembalikan setiap kata ke bentuk dasarnya, misalnya “bermain” menjadi “main”. Semua proses tersebut digabungkan dalam satu fungsi pipeline agar dapat diterapkan secara efisien pada seluruh data ulasan.
+
+Setelah tahap pra-pemrosesan selesai, teks yang telah bersih diklasifikasikan menggunakan model Transformer w11wo/indonesian-roberta-base-sentiment-classifier, yaitu model berbasis RoBERTa yang telah dilatih khusus untuk mengenali sentimen positif, netral, dan negatif dalam bahasa Indonesia. Proses klasifikasi dilakukan melalui fungsi safe_nlp, yang memastikan teks kosong atau terlalu panjang tidak menyebabkan kesalahan selama inferensi. Model menghasilkan dua keluaran utama, yaitu label sentimen dan tingkat kepercayaan (confidence score) untuk setiap ulasan. Selanjutnya, dilakukan penyesuaian hasil klasifikasi secara manual dengan mendeteksi kata kunci tertentu seperti “bagus”, “seru”, atau “keren” untuk menandai sentimen positif, serta “error”, “buruk”, atau “jelek” untuk menandai sentimen negatif, dengan tujuan memperbaiki potensi kesalahan prediksi yang dilakukan oleh model.
     `,
     gallery: [
-      "/projects/output-gru.png",
-      "/projects/output-RF.png",
-      "/projects/distribusimobile legends.png",
+      "/projects/roblox_1.png",
+      "/projects/roblox_2.png",
+      "/projects/roblox_3.png",
+      "/projects/roblox_4.png",
     ],
     longDescriptionparagraf2: `
-      Setelah pemrosesan teks, label sentimen ditetapkan menggunakan pendekatan berbasis leksikon.
-      Ulasan dikategorikan menjadi tiga kelas: negatif (5.483), positif (3.742), dan netral (1.671).
-      Fitur dibangun menggunakan TF-IDF hingga 3-gram, dan 5.000 fitur teratas dipilih menggunakan
-      metode chi-square. Untuk menangani ketidakseimbangan data, dilakukan oversampling menggunakan SMOTE,
-      menghasilkan distribusi kelas yang seimbang.
+      Berdasarkan visualisasi hasil analisis sentimen terhadap ulasan pengguna Roblox di Indonesia, terlihat bahwa mayoritas ulasan bersentimen positif dengan jumlah 4.981 ulasan, diikuti oleh sentimen negatif sebanyak 2.777 ulasan, dan netral sebanyak 883 ulasan. Hal ini menunjukkan bahwa secara umum pengguna memiliki pengalaman yang baik terhadap permainan Roblox.
     `,
     longDescription2: `
-      Tiga model dilatih. Pertama, MLP (Multi-Layer Perceptron) berbasis TF-IDF dengan
-      lapisan dense bertumpuk mencapai akurasi 92,42%.
-      Kedua, Random Forest dengan 1.500 pohon keputusan mencapai akurasi 91,31%.
-      Model terbaik adalah hybrid GRU + TF-IDF, yang menggabungkan embedding sequence dengan fitur TF-IDF,
-      kemudian diproses melalui lapisan GRU dan dense.
-      Model ini mencapai akurasi tertinggi 93,44% dan lebih stabil dalam mengklasifikasikan
-      ulasan positif, negatif, dan netral.
+Dari word cloud ulasan positif, kata-kata yang paling sering muncul seperti “main”, “game”, “bagus”, “seru”, dan “banget” menandakan bahwa pengguna merasa permainan ini menyenangkan, menarik, dan berkualitas baik. Selain itu, kemunculan kata seperti “suka” dan “kerennya” memperkuat kesan positif terhadap pengalaman bermain.
+
+Sementara itu, pada ulasan negatif, kata-kata dominan seperti “roblox”, “error”, “akun”, “bug”, “update”, dan “tolong” menunjukkan bahwa sebagian besar keluhan berkaitan dengan masalah teknis seperti bug, error, atau kesulitan dalam login dan pembaruan sistem. Hal ini sejalan dengan daftar top kata per sentimen, di mana kata “roblox”, “error”, dan “bug” menjadi yang paling sering muncul pada ulasan negatif.
     `,
     longDescription2paragraf2: `
-      Evaluasi dengan metrik akurasi, F1-score, precision, recall, dan confusion matrix
-      menunjukkan bahwa model hybrid GRU mampu menangkap konteks lebih baik dibandingkan metode tradisional.
-      Sebagai contoh penerapan, dibuat fungsi inferensi untuk memprediksi sentimen dari teks baru.
-      Misalnya, “good” diprediksi sebagai positif, “sedang, biasa saja” sebagai netral,
-      dan “sangat buruk, jangan main!” sebagai negatif.
-      Sistem ini menunjukkan solusi analisis sentimen otomatis yang efektif,
-      dengan model deep learning hybrid GRU memberikan performa terbaik.
+     Secara keseluruhan, meskipun terdapat sejumlah keluhan teknis dari pengguna, persepsi publik terhadap Roblox di Indonesia tetap cenderung positif dengan dominasi ulasan yang menyoroti keseruan dan kualitas permainan.
     `,
   },
 ];
