@@ -31,7 +31,7 @@ const projects = [
     title: "Analisis Sentimen Aplikasi Roblox",
     description:
       "Analisis sentimen untuk kategori positif, negatif, dan netral, serta membangun model Machine Learning dan Deep Learning.",
-    image: "/projects/mobile legends.jpg",
+    image: "/projects/roblox_cover.jpg",
     tags: ["Transformer", "streamlit"],
     githubUrl: "https://github.com/Sidqiamn",
   },
