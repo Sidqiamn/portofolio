@@ -17,16 +17,22 @@ export const AboutSection = () => {
               Lulusan Matematika dari Universitas Pendidikan Indonesia dengan
               fokus yang kuat pada Kecerdasan Buatan (AI). Saya berdedikasi
               untuk membangun solusi cerdas berbasis data yang dapat mengatasi
-              tantangan dunia nyata.
+              tantangan dunia nyata. Bersemangat dalam mengembangkan sistem
+              kecerdasan buatan yang mampu memecahkan masalah nyata, saya
+              memiliki keahlian dalam Machine Learning, Deep Learning, Natural
+              Language Processing (NLP), Large Language Models (LLM), serta
+              Computer Vision.
             </p>
 
             <p className="text-muted-foreground">
-              Bersemangat dalam mengubah data yang kompleks menjadi sistem AI
-              yang inovatif dan berdampak, saya memiliki keahlian dalam machine
-              learning, deep learning, dan pemodelan data. Saya berkomitmen
-              untuk terus mengasah kemampuan serta tetap berada di garis
-              terdepan perkembangan teknologi guna menghadirkan solusi yang
-              bermakna di era digital yang dinamis saat ini.
+              Terbiasa bekerja dengan pipeline data, mulai dari pengumpulan,
+              pembersihan, pemodelan, evaluasi, hingga deployment model ke
+              lingkungan produksi. Selain itu, saya memahami aspek MLOps seperti
+              monitoring performa model, dan integrasi CI/CD untuk memastikan
+              model tetap andal. Saya berkomitmen untuk terus belajar,
+              beradaptasi, dan menerapkan perkembangan teknologi terbaru guna
+              menghadirkan solusi yang relevan, efektif, dan berdampak di era
+              digital yang dinamis saat ini.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">

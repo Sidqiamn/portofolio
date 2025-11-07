@@ -89,7 +89,7 @@ export const ContactSection = () => {
                     href="mailto:sidqiamanullah@gmail.com"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    sidqiamanullah@gmail.com
+                    shidqiamanullah.sa@gmail.com
                   </a>
                 </div>
               </div>
@@ -118,7 +118,7 @@ export const ContactSection = () => {
                 <div>
                   <h4 className="font-medium">Location</h4>
                   <span className="text-muted-foreground">
-                    Bandung, Indonesia
+                    Garut, Indonesia
                   </span>
                 </div>
               </div>

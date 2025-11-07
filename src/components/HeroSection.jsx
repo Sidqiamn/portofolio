@@ -23,10 +23,9 @@ export const HeroSection = () => {
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-            Saya membangun solusi cerdas berbasis kecerdasan buatan yang dapat
-            mengubah data menjadi inovasi nyata. Sebagai seorang AI Engineer,
-            saya berfokus pada pengembangan model dan sistem AI yang efektif,
-            terukur, dan memiliki dampak langsung terhadap kebutuhan pengguna.
+            Saya membangun solusi AI yang mengubah data menjadi inovasi nyata.
+            Berfokus pada pengembangan model dan sistem kecerdasan buatan yang
+            efektif, terukur, dan berdampak langsung bagi pengguna.
           </p>
 
           <div className="pt-4 opacity-0 animate-fade-in-delay-4">
