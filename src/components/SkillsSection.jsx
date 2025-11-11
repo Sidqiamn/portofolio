@@ -7,8 +7,13 @@ const skills = [
   { name: "R", category: "AI Engineer" },
   { name: "Tensor Flow", category: "AI Engineer" },
   { name: "Hugging face", category: "AI Engineer" },
+  { name: "RAG", category: "AI Engineer" },
   { name: "Grafana", category: "AI Engineer" },
   { name: "Scikit-learn", category: "AI Engineer" },
+  { name: "PyTorch", category: "AI Engineer" },
+  { name: "Computer Vision", category: "AI Engineer" },
+  { name: "LLM", category: "AI Engineer" },
+  { name: "NLP", category: "AI Engineer" },
   { name: "PyTorch", category: "AI Engineer" },
   { name: "Docker", category: "AI Engineer" },
 

@@ -7,6 +7,7 @@ import ProjectsistemML from "./pages/projectsistemML";
 import { Toaster } from "@/components/ui/toaster";
 import Hiteman from "./pages/Hiteman";
 import RobloxPage from "./pages/RobloxPage";
+import Chatbotrag from "./pages/Chatbotrag";
 
 function App() {
   return (
@@ -19,6 +20,8 @@ function App() {
         <Route path="*" element={<NotFound />} />
         <Route path="/projectsistemML" element={<ProjectsistemML />} />
         <Route path="/hiteman" element={<Hiteman />} />
+        <Route path="/chatbotrag" element={<Chatbotrag />} />
+
         <Route path="/robloxpage" element={<RobloxPage />} />
       </Routes>
     </>

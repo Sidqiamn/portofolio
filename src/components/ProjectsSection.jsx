@@ -44,6 +44,15 @@ const projects = [
     tags: ["Grafana", "Docker", "ML Flow"],
     githubUrl: "https://github.com/Sidqiamn",
   },
+  {
+    id: 6,
+    title: "Chatbot RAG",
+    description:
+      "Membangun chatbot dengan RAG (Retrieval Augmented Generation) pada persediaan stok barang dan dekripsi barang",
+    image: "/projects/chatbot_cover.jpg",
+    tags: ["TIDB", "RAG", "OLLAMA"],
+    githubUrl: "https://github.com/Sidqiamn",
+  },
 ];
 
 export const ProjectsSection = () => {
@@ -108,6 +117,13 @@ export const ProjectsSection = () => {
                     ) : project.id === 1 ? (
                       <Link
                         to={`/hiTeman`} // misal route khusus untuk id 1
+                        className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                      >
+                        <ExternalLink size={20} />
+                      </Link>
+                    ) : project.id === 6 ? (
+                      <Link
+                        to={`/chatbotrag`} // misal route khusus untuk id 1
                         className="text-foreground/80 hover:text-primary transition-colors duration-300"
                       >
                         <ExternalLink size={20} />
